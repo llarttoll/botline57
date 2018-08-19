@@ -60,11 +60,11 @@ message = event.message.text
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="ไฟปิดแล้ว"))
-    elif(message == 'channel2 on'):
+    elif(message == 'test'):
         anto.pub('myChannel2', 1)
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Turn On channel2"))
+            TextSendMessage(text="ok sir"))
     elif(message == 'channel2 off'):
         anto.pub('myChannel2', 0)
         line_bot_api.reply_message(
